@@ -24,3 +24,7 @@ These three APIs are the core APIs, below are the other APIs to be developed. <b
 
 
 Use Postman to conduct the various API tests.
+
+# World API User Interface Dashboard < br />
+
+![Screenshot](WorldAPIUI.png)
