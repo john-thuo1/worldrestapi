@@ -1,5 +1,6 @@
 from tkinter import CASCADE
 from django.db import models
+from tabnanny import verbose
 
 # User is the default Django user database table
 from django.contrib.auth.models import User
@@ -13,6 +14,9 @@ class Continent(models.Model):
     
     def __repr__(self):
         return f"Continent(name='{self.name}')"
+    
+    class Meta:
+        verbose_name_plural = 'Continents'
 
 # Country Table Model
 class Country(models.Model):
@@ -25,6 +29,9 @@ class Country(models.Model):
     
     def __repr__(self):
         return f"Country(name='{self.name}',code='{self.code}')"
+    
+    class Meta:
+        verbose_name_plural = 'Countries'
 
 # Cities Table Model
 
@@ -39,6 +46,9 @@ class Cities(models.Model):
     
     def __repr__(self):
         return f"Cities(country='{self.country}',name='{self.name}')"
+    
+    class Meta:
+        verbose_name_plural = 'Cities'
 
 
 class API(models.Model):
@@ -50,6 +60,9 @@ class API(models.Model):
     
     def __repr__(self):
         return f"API(name='{self.name}',code='{self.code}')"
+    
+    class Meta:
+        verbose_name_plural = 'APIs'
 
 
 class Subscription(models.Model):
@@ -61,4 +74,7 @@ class Subscription(models.Model):
     
     def __repr__(self):
         return f"Subscription(api='{self.api}',user='{self.user}')"
+    
+    class Meta:
+        verbose_name_plural = 'Subscriptions'
 
