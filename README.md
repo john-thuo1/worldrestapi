@@ -7,3 +7,19 @@ These three APIs are the core APIs, below are the other APIs to be developed. <b
 •	Get Subscriptions API - an API responsible for returning the APIs a user has subscribed to <br />
 •	Unsubscribe API – an API responsible for unsubscribing a user from an API <br />
 •	Get API - an API responsible for returning all APIS the system supports <br />
+
+
+                   API Endpoints Table
+
+|Create or Register New User ID |	http://127.0.0.1:8000/api/users/create |
+|Log In API	| http://127.0.0.1:8000/api/users/login |
+|Get all system APIs and their ids |	http://127.0.0.1:8000/api/ |
+|Subscribing to an API	| http://127.0.0.1:8000/api/subscribe/api_id / |
+|Unsubscribing from an API |	http://127.0.0.1:8000/api/unsubscribe/api_id/ |
+|Subscribed APIs | http://127.0.0.1:8000/api/subscribed/ |
+|Get Continents API	| http://127.0.0.1:8000/api/continents/ |
+|Get Countries API	| http://127.0.0.1:8000/api/country/continent_id/ |
+|Get Cities API	 | http://127.0.0.1:8000/api/cities/country_id/ | 
+
+
+Use Postman to conduct the various API tests.
