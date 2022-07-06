@@ -9,8 +9,9 @@ These three APIs are the core APIs, below are the other APIs to be developed. <b
 •	Get API - an API responsible for returning all APIS the system supports <br />
 
 
-                   |API Endpoints Table|
-   
+                   API Endpoints Table
+| API                              |   Endpoint                                     |
+|----------------------------------|:----------------------------------------------:|
 |Create or Register New User ID    |	http://127.0.0.1:8000/api/users/create        |
 |Log In API	                       | http://127.0.0.1:8000/api/users/login          |
 |Get all system APIs and their ids |	http://127.0.0.1:8000/api/ |
